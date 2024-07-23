@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Fixed Deposit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Fixed Deposit Calculator</h1>
+    </div>
+    <div class="main">
+        <div class="input-data">
+            <div class="data">
+                <p>Total investment</p>
+                <input type="number" id="total"  min="1000" max="100000">
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1000" max="100000" value="0" class="slider" id="investmentRange">
+            </div>
+        </div>
+        <div class="input-data" >
+            <div class="data">
+                <p>Rate of interest</p>
+                <input type="number" id="interestRate"  min="1" max="20">
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="20" value="0" class="slider" id="interestRange">
+            </div>
+        </div>
+        <div class="input-data">
+            <div class="data">
+                <p>Time period (in years)</p>
+                <input type="number" id="period"  min="1" max="25">
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="25" value="0" class="slider" id="periodRange">
+            </div>
+        </div>
+
+        <div class="data">
+            <p>Total value</p>
+            <p id="result-total"></p>
+        </div>
+        <div class="data">
+            <p>Est. returns</p>
+            <p id="result-est"></p>
+        </div>
+    </div>
+<script src="script.js"></script>   
+</body>
+</html>
